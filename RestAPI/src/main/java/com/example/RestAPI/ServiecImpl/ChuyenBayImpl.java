@@ -20,4 +20,28 @@ public class ChuyenBayImpl implements ChuyenBayService {
 		return chuyenBayRepository.findAll();
 	}
 
+	@Override
+	public List<ChuyenBay> chuyenBayDenDAD() {
+		// TODO Auto-generated method stub
+		return chuyenBayRepository.findChuyenBaystoGaDiDAD();
+	}
+
+	@Override
+	public List<ChuyenBay> doDaiNhoHon10kVaLonHon8k() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ChuyenBay> chuyenBaySgDenBmt(String gaDi, String gaDen) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer countChuyenBayTuSG(String gaDi) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
