@@ -23,7 +23,7 @@ public interface ChuyenBayService {
 	public List<ChuyenBay> doDaiNhoHon10kVaLonHon8k();
 
 	// 5. Cho biết các chuyến bay xuất phát từ Sài Gòn (SGN) đi Ban Mê Thuộc (BMV)
-	public List<ChuyenBay> chuyenBaySgDenBmt(String gaDi, String gaDen);
+	public List<ChuyenBay> chuyenBaySgDenBmt();
 
 	// 6. Có bao nhiêu chuyến bay xuất phát từ Sài Gòn (SGN)
 	public Integer countChuyenBayTuSG(String gaDi);

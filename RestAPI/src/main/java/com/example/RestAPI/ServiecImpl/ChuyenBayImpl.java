@@ -29,13 +29,13 @@ public class ChuyenBayImpl implements ChuyenBayService {
 	@Override
 	public List<ChuyenBay> doDaiNhoHon10kVaLonHon8k() {
 		// TODO Auto-generated method stub
-		return null;
+		return chuyenBayRepository.findChuyenBayDoDaiHon8VaNhoHon10();
 	}
 
 	@Override
-	public List<ChuyenBay> chuyenBaySgDenBmt(String gaDi, String gaDen) {
+	public List<ChuyenBay> chuyenBaySgDenBmt() {
 		// TODO Auto-generated method stub
-		return null;
+		return chuyenBayRepository.findChuyenBaySGtoiBMT();
 	}
 
 	@Override

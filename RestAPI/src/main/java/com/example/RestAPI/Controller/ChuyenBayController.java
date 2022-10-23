@@ -23,4 +23,22 @@ public class ChuyenBayController {
 		List<ChuyenBay> chuyenBayList = chuyenBayService.listChuyenBay();
 		return new ResponseEntity<>(chuyenBayList,HttpStatus.OK);
 	}
+	
+	@GetMapping("/chuyenbayDaD")
+	public ResponseEntity<Object> getChuyenBaysDenDAD(){
+		List<ChuyenBay> chuyenBayList = chuyenBayService.chuyenBayDenDAD();
+		return new ResponseEntity<>(chuyenBayList,HttpStatus.OK);
+	}
+	
+	@GetMapping("/chuyenbaySGtoiBMT")
+	public ResponseEntity<Object> getChuyenBaysSGtoiBMT(){
+		List<ChuyenBay> chuyenBayList = chuyenBayService.chuyenBaySgDenBmt();
+		return new ResponseEntity<>(chuyenBayList,HttpStatus.OK);
+	}
+	
+	@GetMapping("/chuyenbayDoDaiHon8VaNhoHon10")
+	public ResponseEntity<Object> getChuyenBaysDoDaiHon8VaNhoHon10(){
+		List<ChuyenBay> chuyenBayList = chuyenBayService.doDaiNhoHon10kVaLonHon8k();
+		return new ResponseEntity<>(chuyenBayList,HttpStatus.OK);
+	}
 }

@@ -30,4 +30,22 @@ public class ChuyenBayController {
 		ResponseEntity<String> responseEntity = restTemplate.exchange("http://localhost:8080/api/chuyenbay", HttpMethod.GET,entity,String.class);
 		return responseEntity.getBody();
 	}
+	
+	@GetMapping("/templates/chuyenbayDaD")
+	public String getChuyenBaysDenDAD() {
+		HttpHeaders headers = new HttpHeaders();
+		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+		HttpEntity<String> entity = new HttpEntity<>(headers);
+		ResponseEntity<String> responseEntity = restTemplate.exchange("http://localhost:8080/api/chuyenbayDaD", HttpMethod.GET,entity,String.class);
+		return responseEntity.getBody();
+	}
+	
+	@GetMapping("/templates/chuyenbayDoDaiHon8VaNhoHon10")
+	public String getChuyenBaysDoDaiHon8VaNhoHon10() {
+		HttpHeaders headers = new HttpHeaders();
+		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+		HttpEntity<String> entity = new HttpEntity<>(headers);
+		ResponseEntity<String> responseEntity = restTemplate.exchange("/templates/chuyenbayDoDaiHon8VaNhoHon10", HttpMethod.GET,entity,String.class);
+		return responseEntity.getBody();
+	}
 }
